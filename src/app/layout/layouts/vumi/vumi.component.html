@@ -1,0 +1,137 @@
+<!-- Loading bar -->
+<!-- <fuse-loading-bar></fuse-loading-bar> -->
+
+<!-- Wrapper -->
+<nav class="bg-vumi-blue">
+    <div class="max-w-7xl mx-auto border border-red-400">
+        <div class="flex justify-between">
+            <div class="flex space-x-4 items-center">
+                <!-- logo  -->
+                <div>
+                    <img
+                        class="w-50"
+                        src="https://vumi.com.bd/_next/image?url=%2Fimage%2Flogo.png&w=256&q=75"
+                        alt=""
+                    />
+                </div>
+                <!-- primary navbar -->
+                <div class="hidden md:flex">
+                    <a class="px-15" href="">Why Vumi</a>
+                    <a class="px-15" href="" class="flex">
+                        Courses
+                        <mat-icon
+                            class="text-vumi-orange"
+                            svgIcon="heroicons_solid:chevron-down"
+                        ></mat-icon>
+                    </a>
+                    <div class="search">
+                        <input
+                            type="text"
+                            placeholder="What do you want to learn today?"
+                            class="py-1 mx-10 text-xs px-5 absolute border border-white-200 rounded-3xl tex-white placeholder-gray-300"
+                        />
+                        <mat-icon
+                            class="absolute"
+                            svgIcon="heroicons_solid:search"
+                        ></mat-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- secondary navbar -->
+            <div class="hidden md:flex items-center">
+                <button class="mx-1 md:mx-5 rounded-ful">Sign Up</button>
+                <button
+                    class="mx-1 md:mx-5 rounded-ful inline-block bg-vumi-orange px-6 py-2 text-vumi-white font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                >
+                    Log In
+                </button>
+            </div>
+            <!-- mobile menu button -->
+            <div class="mobile-menu md:hidden flex items-center">
+                <mat-icon
+                    (click)="expandMenu()"
+                    class=""
+                    svgIcon="heroicons_solid:menu"
+                ></mat-icon>
+            </div>
+        </div>
+    </div>
+    <div
+        class="mobile-menus hidden md:hidden transition duration-150"
+        [ngClass]="{ hidden: !isExpand }"
+    >
+        <a class="block py-4 px-2" href="">Why Vumi</a>
+        <a class="flex py-4 px-2 flex items-center" href="">
+            Courses
+            <mat-icon
+                class="text-vumi-orange"
+                svgIcon="heroicons_solid:chevron-down"
+            ></mat-icon>
+        </a>
+        <div class="search">
+            <input
+                type="text"
+                placeholder="What do you want to learn today?"
+                class="py-1 mx-10 text-xs px-5 absolute border border-white-200 rounded-3xl tex-white placeholder-gray-300"
+            />
+            <mat-icon class="" svgIcon="heroicons_solid:search"></mat-icon>
+        </div>
+        <div class="flex items-center py-4">
+            <button class="mx-1 md:mx-5 rounded-ful">Sign Up</button>
+            <button
+                class="mx-1 md:mx-5 rounded-ful inline-block bg-vumi-orange px-6 py-2 text-vumi-white font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+            >
+                Log In
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="flex flex-col flex-auto w-full">
+    <!-- Content -->
+    <div class="flex flex-col flex-auto">
+        <!-- *ngIf="true" hack is required here for router-outlet to work correctly.
+             Otherwise, layout changes won't be registered and the view won't be updated! -->
+        <router-outlet *ngIf="true"></router-outlet>
+    </div>
+</div>
+
+<footer class="bg-black text-white">
+    <div class="max-w-7xl mx-auto flex justify-between">
+        <div class="left p-4">
+            <div class="logo">
+                <img
+                    class="w-50"
+                    src="https://vumi.com.bd/_next/image?url=%2Fimage%2Flogo.png&w=384&q=75"
+                    alt=""
+                />
+            </div>
+            <p class="w-60 mx-2 my-10">
+                Floor 9, Meem Tower 104 Mirput Road, Dhaka, Bangladesh
+            </p>
+        </div>
+        <div class="right p-4">
+            <ul class="flex text-vumi-orange">
+                <li>FAQ</li>
+                <li>NEWSLETTER</li>
+                <li>PRIVACY POLICY</li>
+            </ul>
+            <div class="social my-10">
+                <ul class="flex ">
+                    <li>
+                        <mat-icon>facebook</mat-icon>
+                    </li>
+                    <li>
+                        <mat-icon>facebook</mat-icon>
+                    </li>
+                    <li>
+                        <mat-icon>facebook</mat-icon>
+                    </li>
+                    <li>
+                        <mat-icon>youtube</mat-icon>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

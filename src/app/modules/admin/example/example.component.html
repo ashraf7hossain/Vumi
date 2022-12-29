@@ -1,0 +1,54 @@
+<div class="container max-w-7xl h-screen m-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="left-segment hidden md:flex items-center">
+        <img src="https://vumi.com.bd/image/pay/Shape.png" alt="" />
+    </div>
+    <div class="right-segment flex flex-col justify-center">
+        <div class="login-opts flex justify-between">
+            <button class="w-72 bg-vumi-blue text-white p-4">
+                Login with Google
+            </button>
+            <button class="w-72 bg-vumi-blue text-white p-4 flex items-center justify-center">
+                <mat-icon>facebook</mat-icon>
+                Login with Facebook
+            </button>
+        </div>
+        <h1 class="text-vumi-blue text-center">OR</h1>
+        <div class="login-form flex flex-col">
+            <div class="form-control border-solid border-2 border-vumi-blue p-6 my-5">
+                <div class="label flex items-center">
+                    <mat-icon
+                        class="text-vumi-blue"
+                        svgIcon="heroicons_outline:mail"
+                    ></mat-icon>
+                    <label for="" class="flex items-center"> Email </label>
+                    <input type="email" />
+                </div>
+            </div>
+            <div class="form-control border border-2 border-vumi-blue p-6 my-5">
+                <div class="label flex items-center">
+                    <mat-icon
+                        class="text-vumi-blue"
+                        svgIcon="heroicons_outline:lock-closed"
+                    ></mat-icon>
+                    <label for="" class="flex items-center"> Password </label>
+                    <input type="password" />
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div class="remember flex items-center">
+                    <mat-checkbox></mat-checkbox>
+                    <mat-label class="text-vumi-blue font-bold"
+                        >Remember Me</mat-label
+                    >
+                </div>
+                <mat-label class="text-vumi-blue">Forgot Password?</mat-label>
+            </div>
+            <button class="bg-vumi-blue text-white p-3 font-bold">
+                Log In
+            </button>
+            <p class="text-center mt-5 text-vumi-blue">
+                Don't have an account?<span class="text-vumi-orange text-bold">Sign Up</span>
+            </p>
+        </div>
+    </div>
+</div>
