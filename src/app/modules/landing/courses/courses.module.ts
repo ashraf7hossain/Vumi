@@ -10,6 +10,7 @@ import { ProgramStructureComponent } from './components/program-structure/progra
 import { ProgramSingleComponent } from './components/program-single/program-single.component';
 import { LiveVideoComponent } from './components/live-video/live-video.component';
 import { WhoWillBeBenefitedComponent } from './components/who-will-be-benefited/who-will-be-benefited.component';
+import { SyllabusComponent } from './components/syllabus/syllabus.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WhoWillBeBenefitedComponent } from './components/who-will-be-benefited/
     ProgramStructureComponent,
     ProgramSingleComponent,
     LiveVideoComponent,
-    WhoWillBeBenefitedComponent
+    WhoWillBeBenefitedComponent,
+    SyllabusComponent
   ],
   imports: [
     CommonModule,
