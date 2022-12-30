@@ -13,6 +13,7 @@ import { WhoWillBeBenefitedComponent } from './components/who-will-be-benefited/
 import { SyllabusComponent } from './components/syllabus/syllabus.component';
 import { SyllabusSingleComponent } from './components/syllabus-single/syllabus-single.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
+import { LearnFromComponent } from './components/learn-from/learn-from.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CertificateComponent } from './components/certificate/certificate.compo
     SyllabusComponent,
     SyllabusSingleComponent,
     CertificateComponent,
+    LearnFromComponent,
   ],
   imports: [
     CommonModule,
