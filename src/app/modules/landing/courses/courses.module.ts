@@ -9,6 +9,7 @@ import { WhatWillYouLearnComponent } from './components/what-will-you-learn/what
 import { ProgramStructureComponent } from './components/program-structure/program-structure.component';
 import { ProgramSingleComponent } from './components/program-single/program-single.component';
 import { LiveVideoComponent } from './components/live-video/live-video.component';
+import { WhoWillBeBenefitedComponent } from './components/who-will-be-benefited/who-will-be-benefited.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LiveVideoComponent } from './components/live-video/live-video.component
     WhatWillYouLearnComponent,
     ProgramStructureComponent,
     ProgramSingleComponent,
-    LiveVideoComponent
+    LiveVideoComponent,
+    WhoWillBeBenefitedComponent
   ],
   imports: [
     CommonModule,
