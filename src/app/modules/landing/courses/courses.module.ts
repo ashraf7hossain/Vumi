@@ -11,6 +11,7 @@ import { ProgramSingleComponent } from './components/program-single/program-sing
 import { LiveVideoComponent } from './components/live-video/live-video.component';
 import { WhoWillBeBenefitedComponent } from './components/who-will-be-benefited/who-will-be-benefited.component';
 import { SyllabusComponent } from './components/syllabus/syllabus.component';
+import { SyllabusSingleComponent } from './components/syllabus-single/syllabus-single.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SyllabusComponent } from './components/syllabus/syllabus.component';
     ProgramSingleComponent,
     LiveVideoComponent,
     WhoWillBeBenefitedComponent,
-    SyllabusComponent
+    SyllabusComponent,
+    SyllabusSingleComponent
   ],
   imports: [
     CommonModule,
