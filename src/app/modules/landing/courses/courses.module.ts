@@ -12,6 +12,7 @@ import { LiveVideoComponent } from './components/live-video/live-video.component
 import { WhoWillBeBenefitedComponent } from './components/who-will-be-benefited/who-will-be-benefited.component';
 import { SyllabusComponent } from './components/syllabus/syllabus.component';
 import { SyllabusSingleComponent } from './components/syllabus-single/syllabus-single.component';
+import { CertificateComponent } from './components/certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SyllabusSingleComponent } from './components/syllabus-single/syllabus-s
     LiveVideoComponent,
     WhoWillBeBenefitedComponent,
     SyllabusComponent,
-    SyllabusSingleComponent
+    SyllabusSingleComponent,
+    CertificateComponent,
   ],
   imports: [
     CommonModule,
