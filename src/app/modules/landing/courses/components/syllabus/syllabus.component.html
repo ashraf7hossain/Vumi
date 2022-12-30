@@ -1,16 +1,60 @@
 <div class = "bg-vumi-white">
     <div class="py-9 max-w-7xl mx-auto  text-vumi-blue flex flex-row flex-wrap justify-center">
-        <div class="flex flex-col basis-5/12 text-center mx-auto gap-y-5">
-          <h1 class="font-bold text-8xl text-vumi-orange">
+        <div class="flex flex-col basis-6/12 text-center mx-auto gap-y-5">
+          <h1 class="font-bold text-8xl text-vumi-orange h-28">
             SYLLABUS
           </h1>
-          <app-syllabus-single
-          syllabus_title="MANAGERIAL COMMUNICATION"
-          [syllabus_items]="['Importance of Effective Managerial Communication']"
-          ></app-syllabus-single>
+          <div class="flex flex-col gap-y-5">
+            <app-syllabus-single
+            syllabus_title="MANAGERIAL COMMUNICATION"
+            [syllabus_items]="['Importance of Effective Managerial Communication','Effective Business Communications in The Changing Era to Internal and External Stakeholders',
+            'Communication Strategies and Process; Right Channel and Mode of Communication',
+            'Utilizing the Characteristics of Good News, Persuasive Message, Negative or Bad News, Etc.',
+            'Writing Strategies']"
+            ></app-syllabus-single>
+
+            <app-syllabus-single
+            syllabus_title="PREPARE AND DELIVER WINNING BUSINESS PRESENTATIONS"
+            [syllabus_items]="['Structuring the Presentation',
+            '7c\'s Of Effective Presentation',
+            'Effective Delivery']"
+            ></app-syllabus-single>
+
+            <app-syllabus-single
+            syllabus_title="EFFECTIVE LEADERSHIP COMMUNICATION"
+            [syllabus_items]="['How Leaders Communicate and Inspire?',
+            'How Followers Should Follow?',
+            'Managing Crisis Through Effective Communication']"
+            ></app-syllabus-single>
+          </div>
         </div>
 
-        <img src="assets\images\pages\courses\live-video\1.png" alt="course overview" class="basis-6/12 bg-vumi-white scale-75">
+        <div class="flex flex-col basis-6/12 text-center mx-auto gap-y-5">
+            <div class="h-28 table">
+                <button class="w-3/5 mx-auto font-bold text-2xl bg-vumi-orange text-vumi-white uppercase py-2 px-5 table-cell align-middle">
+                    Download Syllabus PDF
+                </button>
+            </div>
+            <div class="flex flex-col gap-y-5">
+              <app-syllabus-single
+              syllabus_title="EFFECTIVE VIRTUAL COMMUNICATION"
+              [syllabus_items]="['Virtual Communication Strategies and Etiquettes',
+              'Managing Global Virtual Team,',
+              'Communicating Using Apps, Email, Memo, Minutes, Etc.']"
+              ></app-syllabus-single>
+
+              <app-syllabus-single
+              syllabus_title="VERBAL COMMUNICATION AND EMOTIONAL INTELLIGENCE"
+              [syllabus_items]="['Art of Verbal Communication',
+              'Empathy and Emotional Intelligence in Verbal Communication']"
+              ></app-syllabus-single>
+
+              <app-syllabus-single
+              syllabus_title="EFFECTIVE LEADERSHIP COMMUNICATION"
+              [syllabus_items]="['Persuasion Techniques with Exercise']"
+              ></app-syllabus-single>
+            </div>
+          </div>
       </div>
 
 </div>
