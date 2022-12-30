@@ -8,6 +8,7 @@ import { CourseOverviewComponent } from './components/course-overview/course-ove
 import { WhatWillYouLearnComponent } from './components/what-will-you-learn/what-will-you-learn.component';
 import { ProgramStructureComponent } from './components/program-structure/program-structure.component';
 import { ProgramSingleComponent } from './components/program-single/program-single.component';
+import { LiveVideoComponent } from './components/live-video/live-video.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProgramSingleComponent } from './components/program-single/program-sing
     CourseOverviewComponent,
     WhatWillYouLearnComponent,
     ProgramStructureComponent,
-    ProgramSingleComponent
+    ProgramSingleComponent,
+    LiveVideoComponent
   ],
   imports: [
     CommonModule,
