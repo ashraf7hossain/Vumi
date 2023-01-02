@@ -104,9 +104,10 @@ const config = {
                 "vumi-teal": "#69C0B3",
                 "vumi-darkblue": "173254",
                 "vumi-yellow": "#F8B133",
-                "vumi-colors": "#000000",
+                "vumi-black": "#000000",
                 "vumi-white": "#FFFFFF",
                 "vumi-grey": "#BCBEC0",
+                "vumi-lightgrey": "#F2F2F2",
             },
             flex: {
                 0: "0 0 auto",
