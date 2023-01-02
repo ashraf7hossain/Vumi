@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
+import { Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-learn-from-single',
@@ -11,13 +11,6 @@ export class LearnFromSingleComponent {
     @Input() position: string;
     @Input() org: string;
 
-    isHovering : boolean;
-
-    onMouseEnter(){
-        this.isHovering=true;
-    }
-
-    onMouseLeave(){
-        this.isHovering=false;
-    }
+    @Input() element_id: number;
+    @Input() active_id: number;
 }
