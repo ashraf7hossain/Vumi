@@ -14,6 +14,7 @@ import { SyllabusComponent } from './components/syllabus/syllabus.component';
 import { SyllabusSingleComponent } from './components/syllabus-single/syllabus-single.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { LearnFromComponent } from './components/learn-from/learn-from.component';
+import { LearnFromSingleComponent } from './components/learn-from-single/learn-from-single.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LearnFromComponent } from './components/learn-from/learn-from.component
     SyllabusSingleComponent,
     CertificateComponent,
     LearnFromComponent,
+    LearnFromSingleComponent,
   ],
   imports: [
     CommonModule,
