@@ -51,7 +51,7 @@
                 <mat-icon
                     (click)="expandMenu()"
                     class=""
-                    svgIcon="heroicons_solid:menu"
+                    [svgIcon]="menuIcon"
                 ></mat-icon>
             </div>
         </div>
@@ -97,7 +97,7 @@
 </div>
 
 <footer class="bg-black text-white">
-    <div class="max-w-7xl mx-auto flex justify-between">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between">
         <div class="left p-4">
             <div class="logo">
                 <img

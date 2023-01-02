@@ -16,9 +16,15 @@ export class VumiLayoutComponent implements OnDestroy {
     constructor() {}
 
     isExpand: boolean = false;
+    menuIcon: string = "heroicons_solid:menu";
 
     expandMenu(){
         this.isExpand = !this.isExpand;
+        if(this.menuIcon === 'heroicons_solid:menu'){
+            this.menuIcon = 'heroicons_solid:x';
+        }else{
+            this.menuIcon = "heroicons_solid:menu";
+        }
     }
 
     // -----------------------------------------------------------------------------------------------------
