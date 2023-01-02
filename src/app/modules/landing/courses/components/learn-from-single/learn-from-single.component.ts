@@ -10,4 +10,14 @@ export class LearnFromSingleComponent {
     @Input() name: string;
     @Input() position: string;
     @Input() org: string;
+
+    isHovering : boolean;
+
+    onMouseEnter(){
+        this.isHovering=true;
+    }
+
+    onMouseLeave(){
+        this.isHovering=false;
+    }
 }

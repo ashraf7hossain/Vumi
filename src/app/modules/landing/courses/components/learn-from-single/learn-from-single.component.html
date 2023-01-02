@@ -1,7 +1,26 @@
-<div class="text-vumi-white hover:text-vumi-blue group">
-    <p class="font-bold text-3xl group-hover:text-4xl">{{name}}</p>
-    <p class="font-normal text-2xl group-hover:text-3xl">{{position}}, {{org}}</p>
-    <div class="border-vumi-white group-hover:border-vumi-blue border-b-2 w-1/2 group-hover:w-full">
+<div class="flex flex-row" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
 
+    <div class="text-vumi-white hover:text-vumi-blue group basis-1/2">
+        <p class="font-bold text-3xl group-hover:text-4xl">{{name}}</p>
+        <p class="font-normal text-2xl group-hover:text-3xl">{{org}}</p>
+        <div class="border-vumi-white group-hover:border-vumi-blue border-b-2 w-1/2 group-hover:w-full">
+
+        </div>
     </div>
+
+    <div class="basis-1/2 border-l-2 border-vumi-blue" *ngIf="isHovering">
+        <p class="text-7xl ml-5">*****</p>
+        <p class="font-bold text-7xl ml-5">{{name}}</p>
+        <p class="font-medium text-5xl ml-5 -mt-5">{{position}}</p>
+        <p class="font-medium text-5xl ml-5 -mt-5">{{org}}</p>
+        <p class="ml-5">
+            Our most Student Favourite mentor Mr Ridhwanul Haq. An
+            amazing person with more amazing interpersonal skills to
+            match that. Our most Student Favourite mentor Mr Ridhwanul
+            Haq. An amazing person with more amazing interpersonal
+            skills to match that.
+        </p>
+    </div>
+
 </div>
+
