@@ -12,6 +12,7 @@ import { PopularCoursesComponent } from './components/components/popular-courses
 import { SlideContentComponent } from './components/components/slide-content/slide-content.component';
 import { PotentialsComponent } from './components/components/potentials/potentials.component';
 import { TestimonialsComponent } from './components/components/testimonials/testimonials.component';
+import { KeyPartnersComponent } from './components/components/key-partners/key-partners.component';
 @NgModule({
     declarations: [
         LandingHomeComponent,
@@ -19,7 +20,8 @@ import { TestimonialsComponent } from './components/components/testimonials/test
         SlideContentComponent,
         ExpertsMindsComponent,
         PotentialsComponent,
-        TestimonialsComponent
+        TestimonialsComponent,
+        KeyPartnersComponent
     ],
     imports     : [
         RouterModule.forChild(landingHomeRoutes),
