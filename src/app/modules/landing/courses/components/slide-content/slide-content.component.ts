@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SlideRectComponent } from '../slide-rect/slide-rect.component';
 
 @Component({
   selector: 'app-slide-content',

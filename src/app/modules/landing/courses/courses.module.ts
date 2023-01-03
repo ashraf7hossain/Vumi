@@ -18,6 +18,7 @@ import { LearnFromSingleComponent } from './components/learn-from-single/learn-f
 import { SlideModule } from './components/slide/slide.module';
 
 
+
 @NgModule({
   declarations: [
     CoursesComponent,
