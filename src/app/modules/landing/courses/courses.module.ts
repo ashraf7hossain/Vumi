@@ -15,9 +15,8 @@ import { SyllabusSingleComponent } from './components/syllabus-single/syllabus-s
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { LearnFromComponent } from './components/learn-from/learn-from.component';
 import { LearnFromSingleComponent } from './components/learn-from-single/learn-from-single.component';
-import { SlideContentComponent } from './components/slide-content/slide-content.component';
+import { SlideModule } from './components/slide/slide.module';
 
-import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -33,13 +32,12 @@ import { SwiperModule } from 'swiper/angular';
     CertificateComponent,
     LearnFromComponent,
     LearnFromSingleComponent,
-    SlideContentComponent
   ],
   imports: [
     CommonModule,
     CourseFeaturesModule,
     RouterModule.forChild(CoursesRoutes),
-    SwiperModule
+    SlideModule
   ],
 })
 export class CoursesModule { }
