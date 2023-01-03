@@ -10,12 +10,14 @@ import { SwiperModule } from 'swiper/angular';
 import { ExpertsMindsComponent } from './components/components/experts-minds/experts-minds.component';
 import { PopularCoursesComponent } from './components/components/popular-courses/popular-courses.component';
 import { SlideContentComponent } from './components/components/slide-content/slide-content.component';
+import { PotentialsComponent } from './components/components/potentials/potentials.component';
 @NgModule({
     declarations: [
         LandingHomeComponent,
         PopularCoursesComponent,
         SlideContentComponent,
-        ExpertsMindsComponent
+        ExpertsMindsComponent,
+        PotentialsComponent
     ],
     imports     : [
         RouterModule.forChild(landingHomeRoutes),
