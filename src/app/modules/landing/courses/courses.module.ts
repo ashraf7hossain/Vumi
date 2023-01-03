@@ -15,6 +15,9 @@ import { SyllabusSingleComponent } from './components/syllabus-single/syllabus-s
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { LearnFromComponent } from './components/learn-from/learn-from.component';
 import { LearnFromSingleComponent } from './components/learn-from-single/learn-from-single.component';
+import { SlideModule } from './components/slide/slide.module';
+
+
 
 @NgModule({
   declarations: [
@@ -35,6 +38,7 @@ import { LearnFromSingleComponent } from './components/learn-from-single/learn-f
     CommonModule,
     CourseFeaturesModule,
     RouterModule.forChild(CoursesRoutes),
+    SlideModule
   ],
 })
 export class CoursesModule { }

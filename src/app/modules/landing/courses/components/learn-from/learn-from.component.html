@@ -1,6 +1,12 @@
 <div class="bg-vumi-yellow">
-    <div class="max-w-7xl py-9 text-vumi-blue flex flex-row flex-wrap justify-evenly gap-y-5">
-        <app-learn-from-single name="Rahel Ahmed" position="CEO" org="Nagad"></app-learn-from-single>
-
+    <div class="mx-auto max-w-7xl text-vumi-white text-7xl pt-20">
+        <h1>LEARN FROM</h1>
+        <h1 class="font-bold">THE BEST</h1>
+    </div>
+    <div class="mx-auto max-w-7xl py-9 text-vumi-blue flex flex-col flex-wrap justify-evenly gap-y-5">
+        <app-learn-from-single name="Rahel Ahmed" position="CEO" org="Nagad" [element_id]="1" [active_id]="active_id" (click)="onClick(1)"></app-learn-from-single>
+        <app-learn-from-single name="Ridhwanul Haq" position="PhD, Professor" org="IBA, University of Dhaka" [element_id]="2" [active_id]="active_id" (click)="onClick(2)"></app-learn-from-single>
+        <app-learn-from-single name="Dr. Melita Mehjabeen" position="PhD, Professor" org="IBA, University of Dhaka" [element_id]="3" [active_id]="active_id" (click)="onClick(3)"></app-learn-from-single>
+        <app-learn-from-single name="Khaled Mahmud" position="PhD, Professor" org="IBA, University of Dhaka" [element_id]="4" [active_id]="active_id" (click)="onClick(4)"></app-learn-from-single>
     </div>
 </div>
