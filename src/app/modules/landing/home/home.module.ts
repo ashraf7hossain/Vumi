@@ -11,13 +11,15 @@ import { ExpertsMindsComponent } from './components/components/experts-minds/exp
 import { PopularCoursesComponent } from './components/components/popular-courses/popular-courses.component';
 import { SlideContentComponent } from './components/components/slide-content/slide-content.component';
 import { PotentialsComponent } from './components/components/potentials/potentials.component';
+import { TestimonialsComponent } from './components/components/testimonials/testimonials.component';
 @NgModule({
     declarations: [
         LandingHomeComponent,
         PopularCoursesComponent,
         SlideContentComponent,
         ExpertsMindsComponent,
-        PotentialsComponent
+        PotentialsComponent,
+        TestimonialsComponent
     ],
     imports     : [
         RouterModule.forChild(landingHomeRoutes),

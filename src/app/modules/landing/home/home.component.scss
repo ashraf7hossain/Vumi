@@ -89,6 +89,17 @@
     background-size: auto;
   
   }
+
+  .pg {
+    /* The image used */
+    background-image: url("https://marvel-b1-cdn.bc0a.com/f00000000227347/www.ottawa.edu/Ottawa/media/ou/Degree%20Images/Hero%20-%201000x415/Degrees_APGS_G_1000x415_eMBA.jpg?ext=.jpg");
+    // /* Full height */
+    // height: 100vh;
+    // /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .live::before{
     border-radius: 50%;
     background-color: red;
