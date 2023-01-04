@@ -13,6 +13,7 @@ import { SlideContentComponent } from './components/components/slide-content/sli
 import { PotentialsComponent } from './components/components/potentials/potentials.component';
 import { TestimonialsComponent } from './components/components/testimonials/testimonials.component';
 import { KeyPartnersComponent } from './components/components/key-partners/key-partners.component';
+import { DigitalLearningComponent } from './components/components/digital-learning/digital-learning.component';
 @NgModule({
     declarations: [
         LandingHomeComponent,
@@ -21,7 +22,8 @@ import { KeyPartnersComponent } from './components/components/key-partners/key-p
         ExpertsMindsComponent,
         PotentialsComponent,
         TestimonialsComponent,
-        KeyPartnersComponent
+        KeyPartnersComponent,
+        DigitalLearningComponent
     ],
     imports     : [
         RouterModule.forChild(landingHomeRoutes),
