@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 

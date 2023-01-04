@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-testimonials',
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.scss']
+  // encapsulation: ViewEncapsulation.None
+
 })
 export class TestimonialsComponent {
 
