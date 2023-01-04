@@ -1,4 +1,5 @@
 import { Component, OnDestroy, ViewEncapsulation } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core/public_api';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -13,17 +14,20 @@ export class VumiLayoutComponent implements OnDestroy {
     /**
      * Constructor
      */
-    constructor() {}
+    constructor(private translateService: TranslateService) {
+        this.translateService.setDefaultLang('en');
+        this.translateService.use(localStorage.getItem('lang') || 'en');
+    }
 
     isExpand: boolean = false;
-    menuIcon: string = "heroicons_solid:menu";
+    menuIcon: string = 'heroicons_solid:menu';
 
-    expandMenu(){
+    expandMenu() {
         this.isExpand = !this.isExpand;
-        if(this.menuIcon === 'heroicons_solid:menu'){
+        if (this.menuIcon === 'heroicons_solid:menu') {
             this.menuIcon = 'heroicons_solid:x';
-        }else{
-            this.menuIcon = "heroicons_solid:menu";
+        } else {
+            this.menuIcon = 'heroicons_solid:menu';
         }
     }
 

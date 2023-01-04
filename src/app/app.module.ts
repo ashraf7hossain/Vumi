@@ -11,12 +11,19 @@ import { mockApiServices } from 'app/mock-api';
 import { LayoutModule } from 'app/layout/layout.module';
 import { AppComponent } from 'app/app.component';
 import { appRoutes } from 'app/app.routing';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 const routerConfig: ExtraOptions = {
     preloadingStrategy       : PreloadAllModules,
     scrollPositionRestoration: 'enabled'
 };
 
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http);
+  }
+  
 @NgModule({
     declarations: [
         AppComponent
@@ -35,8 +42,17 @@ const routerConfig: ExtraOptions = {
         CoreModule,
 
         // Layout module of your application
-        LayoutModule
+        LayoutModule,
+        // translation 
+        TranslateModule.forRoot({
+            loader: {
+              provide: TranslateLoader,
+              useFactory: HttpLoaderFactory,
+              deps: [HttpClient]
+          }
+          })
     ],
+    providers: [ HttpClient ],
     bootstrap   : [
         AppComponent
     ]

@@ -96,7 +96,7 @@ export const appRoutes: Route[] = [
         path: '',
         component: LayoutComponent,
         data: {
-            layout: 'centered'
+            layout: 'vumi',
         },
         children: [
             {
@@ -104,6 +104,13 @@ export const appRoutes: Route[] = [
                 loadChildren: () =>
                     import('app/modules/landing/home/home.module').then(
                         (m) => m.LandingHomeModule
+                    ),
+            },
+            {
+                path: 'courses',
+                loadChildren: () =>
+                    import('app/modules/landing/courses/courses.module').then(
+                        (m) => m.CoursesModule
                     ),
             },
         ],
@@ -122,7 +129,7 @@ export const appRoutes: Route[] = [
         },
         children: [
             {
-                path: 'example',
+                path: 'login',
                 loadChildren: () =>
                     import('app/modules/admin/example/example.module').then(
                         (m) => m.ExampleModule
