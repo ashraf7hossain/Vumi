@@ -5,14 +5,16 @@
                 <h1 class="text-7xl font-bold md:-ml-10 mt-2">KEY PARTNERS</h1>
             </div>
 
+            <button (click)="slidePrev()" class="btnSwipePrev mt-12 -mr-32">
+                <mat-icon svgIcon="heroicons_solid:chevron-left"></mat-icon>
+            </button>
             <div class="w-1/2 h-1/2 md:scale-75 ml-8 md:mx-auto sm:mx-auto">
                 <swiper
+                    #swiper
+                    [virtual]="true"
                     [slidesPerView]="3"
                     [spaceBetween]="10"
-                    [navigation]="true"
-                    [pagination]="{
-                        clickable: true
-                    }"
+                    [navigation]="false"
                 >
                     <ng-template swiperSlide class="inline text-left">
                         <div>
@@ -90,6 +92,9 @@
                     </ng-template>
                 </swiper>
             </div>
+            <button (click)="slideNext()" class="btnSwipeNext mt-12 -ml-30">
+                <mat-icon svgIcon="heroicons_solid:chevron-right"></mat-icon>
+            </button>
         </div>
     </div>
 </div>
