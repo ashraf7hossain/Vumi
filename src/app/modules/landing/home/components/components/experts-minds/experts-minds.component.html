@@ -26,26 +26,33 @@
                 </div>
             </div>
 
-            <div class="md:w-1/2 phn -mr-8 -mt-3 h-100 scale-90 mx-auto">
+            <button
+                (click)="slidePrevExperts()"
+                class="btnSwipeNext2 mt-32 ml-12 -mr-14"
+            >
+                <mat-icon svgIcon="heroicons_solid:chevron-left"></mat-icon>
+            </button>
+            <div class="md:w-1/2 phn -mr-14 -ml-2 -mt-3 h-90 scale-90 mx-auto">
                 <swiper
+                    #swiper
+                    [virtual]="true"
                     [slidesPerView]="1"
                     [spaceBetween]="10"
-                    [navigation]="true"
-                    [pagination]="{
-                        clickable: true
-                    }"
+                    [navigation]="false"
                 >
                     <ng-template swiperSlide class="mg inline text-left">
-                        <div class="flex flex-row ml-8 mt-14 gap-x-3">
+                        <div class="flex flex-row ml-8 mt-12 gap-x-3">
                             <div
-                                class="w-5 h-5 my-auto bg-vumi-orange rounded-full"
+                                class="w-4 h-4 my-auto bg-vumi-orange rounded-full"
                             ></div>
-                            <h1 class="text-7xl font-bold text-orange-700 live">
+                            <h1
+                                class="text-5xl font-semibold text-vumi-orange live"
+                            >
                                 LIVE
                             </h1>
                         </div>
                         <br />
-                        <div class="mt-28">
+                        <div class="mt-22">
                             <p class="text-2xl font-bold ml-8 text-white">
                                 ALLIAN TROUE
                             </p>
@@ -58,16 +65,18 @@
                         </div>
                     </ng-template>
                     <ng-template swiperSlide class="mg inline text-left">
-                        <div class="flex flex-row ml-8 mt-14 gap-x-3">
+                        <div class="flex flex-row ml-8 mt-12 gap-x-3">
                             <div
-                                class="w-5 h-5 my-auto bg-vumi-orange rounded-full"
+                                class="w-4 h-4 my-auto bg-vumi-orange rounded-full"
                             ></div>
-                            <h1 class="text-7xl font-bold text-orange-700 live">
+                            <h1
+                                class="text-5xl font-semibold text-vumi-orange live"
+                            >
                                 LIVE
                             </h1>
                         </div>
                         <br />
-                        <div class="mt-28">
+                        <div class="mt-22">
                             <p class="text-2xl font-bold ml-8 text-white">
                                 ALLIAN TROUE
                             </p>
@@ -80,16 +89,42 @@
                         </div>
                     </ng-template>
                     <ng-template swiperSlide class="mg inline text-left">
-                        <div class="flex flex-row ml-8 mt-14 gap-x-3">
+                        <div class="flex flex-row ml-8 mt-12 gap-x-3">
                             <div
-                                class="w-5 h-5 my-auto bg-vumi-orange rounded-full"
+                                class="w-4 h-4 my-auto bg-vumi-orange rounded-full"
                             ></div>
-                            <h1 class="text-7xl font-bold text-orange-700 live">
+                            <h1
+                                class="text-5xl font-semibold text-vumi-orange live"
+                            >
                                 LIVE
                             </h1>
                         </div>
                         <br />
-                        <div class="mt-28">
+                        <div class="mt-22">
+                            <p class="text-2xl font-bold ml-8 text-white">
+                                ALLIAN TROUE
+                            </p>
+                            <p class="ml-8 text-orange-700">
+                                Teaches Graphic Design
+                            </p>
+                            <p class="text-2xl font-bold ml-8 text-white">
+                                LIVE NOW!
+                            </p>
+                        </div>
+                    </ng-template>
+                    <ng-template swiperSlide class="mg inline text-left">
+                        <div class="flex flex-row ml-8 mt-12 gap-x-3">
+                            <div
+                                class="w-4 h-4 my-auto bg-vumi-orange rounded-full"
+                            ></div>
+                            <h1
+                                class="text-5xl font-semibold text-vumi-orange live"
+                            >
+                                LIVE
+                            </h1>
+                        </div>
+                        <br />
+                        <div class="mt-22">
                             <p class="text-2xl font-bold ml-8 text-white">
                                 ALLIAN TROUE
                             </p>
@@ -103,6 +138,12 @@
                     </ng-template>
                 </swiper>
             </div>
+            <button
+                (click)="slideNextExperts()"
+                class="btnSwipeNext2 mt-32 -ml-2"
+            >
+                <mat-icon svgIcon="heroicons_solid:chevron-right"></mat-icon>
+            </button>
         </div>
     </div>
 </div>

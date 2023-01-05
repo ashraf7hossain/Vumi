@@ -1,10 +1,29 @@
 .mg {
-    /* The image used */
     background-image: url("https://modernhire.com/wp-content/uploads/2021/06/sigmund-MQ2xYBHImKM-unsplash.jpg");
-    // /* Full height */
-    // height: 100vh;
-    // /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+}
+.btnSwipePrev {
+    color: #e55037;
+    background: white;
+    font-size: 42px;
+    width: 5%;
+    height: 0%;
+    border-radius: 100%;
+}
+.btnSwipeNext2 {
+    color: #e55037;
+    background: white;
+    font-size: 42px;
+    width: 5%;
+    height: 0%;
+    border-radius: 100%;
+}
+mat-icon {
+    color: white;
+    transform: scale(2);
+}
+button {
+    z-index: 1000;
 }
