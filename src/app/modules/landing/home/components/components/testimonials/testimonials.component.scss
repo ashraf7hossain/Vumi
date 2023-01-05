@@ -1,16 +1,30 @@
 @media only screen and (max-width: 600px) {
-    .phn{
+    .phn {
         width: 100%;
     }
 }
-.swiper-button-prev
-{
-  position: absolute;
-  color: white;
-  background:red;
-  width: 13%;
-  height: 17%;
-  border-radius: 100%;
-  right: auto;
-  left: 0px;
+.swiper-button-prev {
+    position: absolute;
+    color: white;
+    background: red;
+    width: 13%;
+    height: 17%;
+    border-radius: 100%;
+    right: auto;
+    left: 0px;
+}
+.btnSwipeNext3 {
+    color: #e55037;
+    background: white;
+    font-size: 42px;
+    width: 5%;
+    height: 0%;
+    border-radius: 100%;
+}
+mat-icon {
+    color: #e55037;
+    transform: scale(2);
+}
+button {
+    z-index: 1000;
 }

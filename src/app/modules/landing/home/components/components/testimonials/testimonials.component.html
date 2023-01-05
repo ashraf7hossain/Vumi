@@ -1,39 +1,58 @@
 <div class="bg-vumi-yellow">
     <div class="max-w-7xl py-28 mx-auto">
         <div class="flex flex-wrap justify-center">
-            <div class="md:w-1/2 phn -mt-8 h-100 scale-90 mx-auto ">
-                <swiper class=" md:-ml-24 h-90"
+            <button
+                (click)="slidePrevTestimonials()"
+                class="btnSwipeNext3 mt-32 -ml-8 -mr-9"
+            >
+                <mat-icon svgIcon="heroicons_solid:chevron-left"></mat-icon>
+            </button>
+            <div class="md:w-1/2 phn -mt-8 ml-15 h-100 scale-90 mx-auto">
+                <swiper
+                    class="md:-ml-24 h-90"
+                    #swiper
+                    [virtual]="true"
                     [slidesPerView]="1"
                     [spaceBetween]="10"
-                    [navigation]="true"
-                    [pagination]="{
-                    clickable: true
-                    }">
-                    <ng-template swiperSlide class="pg">
-                    </ng-template>
+                    [navigation]="false"
+                >
+                    <ng-template swiperSlide class="pg"> </ng-template>
 
-                    <ng-template swiperSlide class="pg">
-                    </ng-template>
+                    <ng-template swiperSlide class="pg"> </ng-template>
 
-                    <ng-template swiperSlide class="pg">
-                    </ng-template>
-                </swiper >
+                    <ng-template swiperSlide class="pg"> </ng-template>
+                </swiper>
             </div>
+            <button
+                (click)="slideNextTestimonials()"
+                class="btnSwipeNext3 mt-32 -ml-36 mr-32"
+            >
+                <mat-icon svgIcon="heroicons_solid:chevron-right"></mat-icon>
+            </button>
+
             <div class="text-vumi-white md:basis-5/12 text-left">
-                    <h1 class="text-7xl font-normal -mt-8">
-                        <strong>TESTIMONIALS</strong>
-                    </h1>
-                    <div class="space-y-5 mt-5">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem modi ducimus aliquam. Ut nihil esse beatae veniam at iusto atque magni doloribus sit. Inventore, quisquam perferendis cupiditate explicabo est quibusdam quo deserunt fugit, officia reprehenderit sit voluptates error ea, obcaecati enim! Optio consequuntur veniam commodi tempore accusantium rerum ea suscipit.                        
-                        </p>
-                    </div>
-                    <div class="flex flex-col justify-center  mt-15">
-                        <h1 class="text-6xl font-semibold -mt-2">Himalay Ahmed</h1>
-                        <h2 class="text-3xl font-normal -mt-3">CEO</h2>
-                        <p class="text-2xl font-normal -mt-2">Mountain Trekking Association</p>
-                    </div>
+                <h1 class="text-7xl font-normal -mt-8">
+                    <strong>TESTIMONIALS</strong>
+                </h1>
+                <div class="space-y-5 mt-5">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Exercitationem modi ducimus aliquam. Ut nihil esse
+                        beatae veniam at iusto atque magni doloribus sit.
+                        Inventore, quisquam perferendis cupiditate explicabo est
+                        quibusdam quo deserunt fugit, officia reprehenderit sit
+                        voluptates error ea, obcaecati enim! Optio consequuntur
+                        veniam commodi tempore accusantium rerum ea suscipit.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center mt-15">
+                    <h1 class="text-6xl font-semibold -mt-2">Himalay Ahmed</h1>
+                    <h2 class="text-3xl font-normal -mt-3">CEO</h2>
+                    <p class="text-2xl font-normal -mt-2">
+                        Mountain Trekking Association
+                    </p>
+                </div>
             </div>
+        </div>
     </div>
 </div>
-
