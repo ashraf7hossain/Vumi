@@ -7,13 +7,13 @@ import { landingHomeRoutes } from 'app/modules/landing/home/home.routing';
 import { SharedModule } from 'app/shared/shared.module';
 import { SwiperModule } from 'swiper/angular';
 
-import { ExpertsMindsComponent } from './components/components/experts-minds/experts-minds.component';
-import { PopularCoursesComponent } from './components/components/popular-courses/popular-courses.component';
-import { SlideContentComponent } from './components/components/slide-content/slide-content.component';
-import { PotentialsComponent } from './components/components/potentials/potentials.component';
-import { TestimonialsComponent } from './components/components/testimonials/testimonials.component';
-import { KeyPartnersComponent } from './components/components/key-partners/key-partners.component';
 import { DigitalLearningComponent } from './components/components/digital-learning/digital-learning.component';
+import { ExpertsMindsComponent } from './components/components/experts-minds/experts-minds.component';
+import { KeyPartnersComponent } from './components/components/key-partners/key-partners.component';
+import { PopularCoursesComponent } from './components/components/popular-courses/popular-courses.component';
+import { PotentialsComponent } from './components/components/potentials/potentials.component';
+import { SlideContentComponent } from './components/components/slide-content/slide-content.component';
+import { TestimonialsComponent } from './components/components/testimonials/testimonials.component';
 @NgModule({
     declarations: [
         LandingHomeComponent,
@@ -23,16 +23,14 @@ import { DigitalLearningComponent } from './components/components/digital-learni
         PotentialsComponent,
         TestimonialsComponent,
         KeyPartnersComponent,
-        DigitalLearningComponent
+        DigitalLearningComponent,
     ],
-    imports     : [
+    imports: [
         RouterModule.forChild(landingHomeRoutes),
         MatButtonModule,
         MatIconModule,
         SharedModule,
-        SwiperModule
-    ]
+        SwiperModule,
+    ],
 })
-export class LandingHomeModule
-{
-}
+export class LandingHomeModule {}

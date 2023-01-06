@@ -2,7 +2,18 @@
     background-image: url("https://modernhire.com/wp-content/uploads/2021/06/sigmund-MQ2xYBHImKM-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: auto;
+    overflow: hidden;
+    // width: 60%;
+}
+
+.phn {
+    background-image: url("https://modernhire.com/wp-content/uploads/2021/06/sigmund-MQ2xYBHImKM-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    // width: 60%;
 }
 .btnSwipePrev {
     color: #e55037;
@@ -13,6 +24,15 @@
     border-radius: 100%;
 }
 .btnSwipeNext2 {
+    color: #e55037;
+    background: white;
+    font-size: 42px;
+    width: 5%;
+    height: 0%;
+    border-radius: 100%;
+}
+
+.btnSwipePhone {
     color: #e55037;
     background: white;
     font-size: 42px;

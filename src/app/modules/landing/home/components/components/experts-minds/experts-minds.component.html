@@ -2,7 +2,7 @@
     <div class="max-w-7xl py-28 mx-auto">
         <div class="flex flex-wrap justify-center">
             <div
-                class="text-vumi-white md:basis-5/12 infxs:w-3/4 md:text-left infxs:text-center"
+                class="text-vumi-white md:basis-5/12 infxs:w-3/4 md:text-left md:-mt-0 infxs:-mt-16 infxs:text-center"
             >
                 <h1 class="md:text-7xl infxs:text-4xl font-normal -mt-2">
                     FROM THE MINDS
@@ -13,7 +13,12 @@
                     OF THE <strong>EXPERTS</strong>
                 </h1>
                 <div class="space-y-5 mt-5 md:text-xl infxs:text-sm">
-                    <p>
+                    <p class="md:hidden md:mb-0 infxs:mb-8 infxs:block">
+                        Lorem ipsum dolor sit,<br />
+                        amet consectetur adipisicing elit. Facilis, voluptatem?
+                        Provident omnis aliquam deleniti.
+                    </p>
+                    <p class="md:block infxs:hidden">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Facilis, voluptatem? Provident omnis aliquam deleniti
                         nemo, quaerat perspiciatis delectus cum minima
@@ -23,25 +28,29 @@
                         aspernatur hic.
                     </p>
                 </div>
-                <div class="flex justify-center md:block">
-                    <button
-                        class="bg-vumi-white text-vumi-blue px-8 py-2 font-semibold text-xl mt-5 sm:justify-center"
-                    >
-                        Join Live Session
-                    </button>
+                <div class="infxs:hidden md:block">
+                    <div class="flex justify-center md:block">
+                        <button
+                            class="bg-vumi-white text-vumi-blue px-8 py-2 font-semibold text-xl mt-5 sm:justify-center"
+                        >
+                            Join Live Session
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <button
                 (click)="slidePrevExperts()"
-                class="btnSwipeNext2 mt-32 ml-12 -mr-14"
+                class="btnSwipeNext2 mt-32 ml-12 -mr-14 hidden md:block"
             >
                 <mat-icon
                     svgIcon="heroicons_solid:chevron-left"
                     class="text-vumi-orange"
                 ></mat-icon>
             </button>
-            <div class="md:w-1/2 phn -mr-14 -ml-2 -mt-3 h-90 scale-90 mx-auto">
+            <div
+                class="md:w-1/2 phn -mr-14 -ml-2 -mt-3 h-90 scale-90 mx-auto hidden md:block"
+            >
                 <swiper
                     #swiper
                     [virtual]="true"
@@ -63,7 +72,7 @@
                         <br />
                         <div class="mt-22">
                             <p class="text-2xl font-bold ml-8 text-white">
-                                ALLIAN TROUE
+                                ALLAN TROUE
                             </p>
                             <p class="ml-8 text-orange-700">
                                 Teaches Graphic Design
@@ -87,7 +96,7 @@
                         <br />
                         <div class="mt-22">
                             <p class="text-2xl font-bold ml-8 text-white">
-                                ALLIAN TROUE
+                                ALLAN TROUE
                             </p>
                             <p class="ml-8 text-orange-700">
                                 Teaches Graphic Design
@@ -111,7 +120,7 @@
                         <br />
                         <div class="mt-22">
                             <p class="text-2xl font-bold ml-8 text-white">
-                                ALLIAN TROUE
+                                ALLAN TROUE
                             </p>
                             <p class="ml-8 text-orange-700">
                                 Teaches Graphic Design
@@ -135,7 +144,7 @@
                         <br />
                         <div class="mt-22">
                             <p class="text-2xl font-bold ml-8 text-white">
-                                ALLIAN TROUE
+                                ALLAN TROUE
                             </p>
                             <p class="ml-8 text-orange-700">
                                 Teaches Graphic Design
@@ -149,13 +158,160 @@
             </div>
             <button
                 (click)="slideNextExperts()"
-                class="btnSwipeNext2 mt-32 -ml-2"
+                class="btnSwipeNext2 mt-32 -ml-2 hidden md:block"
             >
                 <mat-icon
                     svgIcon="heroicons_solid:chevron-right"
                     class="text-vumi-orange"
                 ></mat-icon>
             </button>
+
+            <!-- phone responsive start -->
+            <div class="md:hidden infxs:flex">
+                <div class="mt-44">
+                    <button (click)="slidePrevExpertsPhone()">
+                        <mat-icon
+                            class="btnSwipePrev"
+                            svgIcon="heroicons_solid:chevron-left"
+                        ></mat-icon>
+                    </button>
+                </div>
+
+                <div class="w-60 h-100 mx-auto md:hidden infxs:block">
+                    <swiper
+                        #swiper2
+                        [virtual]="true"
+                        [slidesPerView]="1"
+                        [spaceBetween]="10"
+                        [navigation]="false"
+                    >
+                        <ng-template swiperSlide class="phn inline text-left">
+                            <div class="flex flex-row ml-4 mt-4 gap-x-2">
+                                <div
+                                    class="w-2 h-2 my-auto bg-vumi-orange rounded-full"
+                                ></div>
+                                <h1
+                                    class="text-xl font-semibold text-vumi-orange live"
+                                >
+                                    LIVE
+                                </h1>
+                            </div>
+                            <br />
+                            <div class="mt-56">
+                                <p class="text-lg font-bold ml-2 text-white">
+                                    ALLAN TROUE
+                                </p>
+                                <p
+                                    class="text-sm font-semibold ml-2 text-vumi-orange"
+                                >
+                                    Teaches Graphic Design
+                                </p>
+                                <p class="text-lg font-bold ml-2 text-white">
+                                    LIVE NOW!
+                                </p>
+                            </div>
+                        </ng-template>
+                        <ng-template swiperSlide class="phn inline text-left">
+                            <div class="flex flex-row ml-4 mt-4 gap-x-2">
+                                <div
+                                    class="w-2 h-2 my-auto bg-vumi-orange rounded-full"
+                                ></div>
+                                <h1
+                                    class="text-xl font-semibold text-vumi-orange live"
+                                >
+                                    LIVE
+                                </h1>
+                            </div>
+                            <br />
+                            <div class="mt-56">
+                                <p class="text-lg font-bold ml-2 text-white">
+                                    ALLAN TROUE
+                                </p>
+                                <p
+                                    class="text-sm font-semibold ml-2 text-vumi-orange"
+                                >
+                                    Teaches Graphic Design
+                                </p>
+                                <p class="text-lg font-bold ml-2 text-white">
+                                    LIVE NOW!
+                                </p>
+                            </div>
+                        </ng-template>
+                        <ng-template swiperSlide class="phn inline text-left">
+                            <div class="flex flex-row ml-4 mt-4 gap-x-2">
+                                <div
+                                    class="w-2 h-2 my-auto bg-vumi-orange rounded-full"
+                                ></div>
+                                <h1
+                                    class="text-xl font-semibold text-vumi-orange live"
+                                >
+                                    LIVE
+                                </h1>
+                            </div>
+                            <br />
+                            <div class="mt-56">
+                                <p class="text-lg font-bold ml-2 text-white">
+                                    ALLAN TROUE
+                                </p>
+                                <p
+                                    class="text-sm font-semibold ml-2 text-vumi-orange"
+                                >
+                                    Teaches Graphic Design
+                                </p>
+                                <p class="text-lg font-bold ml-2 text-white">
+                                    LIVE NOW!
+                                </p>
+                            </div>
+                        </ng-template>
+                        <ng-template swiperSlide class="phn inline text-left">
+                            <div class="flex flex-row ml-4 mt-4 gap-x-2">
+                                <div
+                                    class="w-2 h-2 my-auto bg-vumi-orange rounded-full"
+                                ></div>
+                                <h1
+                                    class="text-xl font-semibold text-vumi-orange live"
+                                >
+                                    LIVE
+                                </h1>
+                            </div>
+                            <br />
+                            <div class="mt-56">
+                                <p class="text-lg font-bold ml-2 text-white">
+                                    ALLAN TROUE
+                                </p>
+                                <p
+                                    class="text-sm font-semibold ml-2 text-vumi-orange"
+                                >
+                                    Teaches Graphic Design
+                                </p>
+                                <p class="text-lg font-bold ml-2 text-white">
+                                    LIVE NOW!
+                                </p>
+                            </div>
+                        </ng-template>
+                    </swiper>
+                </div>
+
+                <div class="mt-44">
+                    <button (click)="slideNextExpertsPhone()">
+                        <mat-icon
+                            class="btnSwipeNext2"
+                            svgIcon="heroicons_solid:chevron-right"
+                        ></mat-icon>
+                    </button>
+                </div>
+            </div>
+            <!-- phone responsive end -->
+
+            <div class="md:hidden infxs:block">
+                <div class="flex justify-center md:block">
+                    <button
+                        class="bg-vumi-white text-vumi-blue px-8 py-2 font-semibold text-xl mt-5 sm:justify-center"
+                    >
+                        Join Live Session
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

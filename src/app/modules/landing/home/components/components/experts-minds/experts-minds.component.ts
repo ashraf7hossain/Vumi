@@ -13,10 +13,26 @@ SwiperCore.use([Virtual]);
 })
 export class ExpertsMindsComponent {
     @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
+    @ViewChild('swiper2', { static: false }) swiper2?: SwiperComponent;
     slideNextExperts() {
         this.swiper.swiperRef.slideNext(100);
     }
+    slideNextExpertsPhone() {
+        this.swiper2.swiperRef.slideNext(100);
+    }
     slidePrevExperts() {
         this.swiper.swiperRef.slidePrev(100);
+    }
+    slidePrevExpertsPhone() {
+        this.swiper2.swiperRef.slidePrev(100);
+    }
+
+    mobile: boolean;
+    NgOnInit() {
+        if (window.screen.width <= 425) {
+            this.mobile = true;
+        } else {
+            this.mobile = false;
+        }
     }
 }
