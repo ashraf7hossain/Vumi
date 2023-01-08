@@ -3,11 +3,13 @@
         <div class="flex flex-wrap justify-center">
             <button
                 (click)="slidePrevTestimonials()"
-                class="btnSwipeNext3 mt-32 -ml-8 -mr-9"
+                class="btnSwipeNext3 mt-32 -ml-8 -mr-9 infxs:hidden md:block"
             >
                 <mat-icon svgIcon="heroicons_solid:chevron-left"></mat-icon>
             </button>
-            <div class="md:w-1/2 -mt-8 ml-15 h-100 scale-90 mx-auto">
+            <div
+                class="md:w-1/2 -mt-8 ml-15 h-100 scale-90 mx-auto infxs:hidden md:block"
+            >
                 <swiper
                     class="md:-ml-24 h-90"
                     #swiper
@@ -25,17 +27,27 @@
             </div>
             <button
                 (click)="slideNextTestimonials()"
-                class="btnSwipeNext3 mt-32 -ml-36 mr-32"
+                class="btnSwipeNext3 mt-32 -ml-36 mr-32 infxs:hidden md:block"
             >
                 <mat-icon svgIcon="heroicons_solid:chevron-right"></mat-icon>
             </button>
 
-            <div class="text-vumi-white md:basis-5/12 text-left">
-                <h1 class="text-7xl font-normal -mt-8">
+            <div
+                class="text-vumi-white md:basis-5/12 md:text-left infxs:text-center md:-mt-0 infxs:-mt-16"
+            >
+                <h1
+                    class="md:text-7xl infxs:text-3xl md:font-normal infxs:font-semibold md:-mt-8 infxs:-mt-2"
+                >
                     <strong>TESTIMONIALS</strong>
                 </h1>
-                <div class="space-y-5 mt-5">
-                    <p>
+                <div class="space-y-5 mt-2">
+                    <p class="md:hidden md:mb-0 infxs:mb-8 infxs:block">
+                        Lorem ipsum dolor sit,<br />
+                        amet consectetur adipisicing elit. Facilis,<br />
+                        voluptatem? Provident omnis aliquam deleniti.<br />
+                        laoreet eulsmod tincidunt ut laoreeet
+                    </p>
+                    <p class="md:block infxs:hidden">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Exercitationem modi ducimus aliquam. Ut nihil esse
                         beatae veniam at iusto atque magni doloribus sit.
@@ -45,10 +57,77 @@
                         veniam commodi tempore accusantium rerum ea suscipit.
                     </p>
                 </div>
-                <div class="flex flex-col justify-center mt-15">
+                <div
+                    class="flex flex-col justify-center mt-15 md:block infxs:hidden"
+                >
                     <h1 class="text-6xl font-semibold -mt-2">Himalay Ahmed</h1>
                     <h2 class="text-3xl font-normal -mt-3">CEO</h2>
                     <p class="text-2xl font-normal -mt-2">
+                        Mountain Trekking Association
+                    </p>
+                </div>
+            </div>
+
+            <!-- phone responsive start -->
+            <div class="md:hidden infxs:flex">
+                <div class="mt-48">
+                    <button (click)="slidePrevExpertsPhone()">
+                        <mat-icon
+                            class="btnSwipePrev"
+                            svgIcon="heroicons_solid:chevron-left"
+                        ></mat-icon>
+                    </button>
+                </div>
+
+                <div class="w-60 h-100 mx-auto md:hidden infxs:block">
+                    <swiper
+                        #swiper2
+                        [virtual]="true"
+                        [slidesPerView]="1"
+                        [spaceBetween]="10"
+                        [navigation]="false"
+                    >
+                        <ng-template
+                            swiperSlide
+                            class="phnTestimonials inline text-left"
+                        >
+                        </ng-template>
+                        <ng-template
+                            swiperSlide
+                            class="phnTestimonials inline text-left"
+                        ></ng-template>
+                        <ng-template
+                            swiperSlide
+                            class="phnTestimonials inline text-left"
+                        >
+                        </ng-template>
+                        <ng-template
+                            swiperSlide
+                            class="phnTestimonials inline text-left"
+                        >
+                        </ng-template>
+                    </swiper>
+                </div>
+
+                <div class="mt-48">
+                    <button (click)="slideNextExpertsPhone()">
+                        <mat-icon
+                            class="btnSwipeNext2"
+                            svgIcon="heroicons_solid:chevron-right"
+                        ></mat-icon>
+                    </button>
+                </div>
+            </div>
+            <!-- phone responsive end -->
+            <div
+                class="text-vumi-white md:basis-5/12 md:text-left infxs:text-center md:-mt-0 infxs:-mt-8"
+            >
+                <div
+                    class="flex flex-col justify-center mt-15 md:hidden infxs:block"
+                >
+                    <h1 class="text-2xl font-semibold -mt-2">Himalay Ahmed</h1>
+                    <h2 class="text-xl font-normal -mt-1">CEO</h2>
+                    <p class="text-md font-normal -mt-1">
                         Mountain Trekking Association
                     </p>
                 </div>
